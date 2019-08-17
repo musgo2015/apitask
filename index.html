@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stars Wars - SWAPI</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--boostrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Estilos-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="global">
+        <header>
+            <div id="logo">
+                <img id="logo2" src="./img/descarga.png" alt="">
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li id="Inicio"><a href="./index.html">INICIO</li></a>
+                        <li id="swapi"><a href="#">SWAPI</li></a>
+                            <li id="films"><a href="#">PELICULAS</li></a>
+                                <li id="people"><a href="#">PERSONAJES</li></a>
+                                    <li id="planets"><a href="#">PLANETAS</li></a>
+                                        <li id="species"><a href="#">ESPECIES</li></a>
+                                            <li id="startchips"><a href="#">NAVES</li></a>
+                </ul>
+
+            </nav>
+
+        </header>
+        <!-- Slider-->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/personajes.jpg" alt="Los Angeles">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/maxresdefault.jpg" alt="Chicago">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/descarga.png" alt="New York">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+        <div id="contenido">
+
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <footer>
+
+        <address>@Skinner Todos los Derechos Reservados</address>
+
+    </footer>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/moment.js"></script>
+    <script src="functions.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
