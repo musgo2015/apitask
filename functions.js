@@ -8,7 +8,7 @@ function traerSwapi() {
             contenido.innerHTML = `
         <p> Bievenido a Swapi - API OFICIAL DE STARWARS </p>  
         <p> Datos que contiene la API </p>   
-        <li>Peliculas </li> 
+        <li>peliculas </li> 
         <li>Planetas </li>  
         <li>Especies </li>  
         <li>Naves Espaciales </li>  
