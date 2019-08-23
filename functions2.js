@@ -20,11 +20,11 @@ $.getJSON(url, datos, function(response){
 }
 
 
-url = 'https://swapi.co/api/people/';
+url2 = 'https://swapi.co/api/people/';
 
 function traerPeople() {
 datos = {};
-$.getJSON(url, datos, function(response){
+$.getJSON(url2, datos, function(response){
     console.log(response.results);
     contenido.innerHTML = `
      <h1>Nombre: ${response.results[0].name}</h1>
@@ -70,13 +70,13 @@ $.getJSON(url, datos, function(response){
 }
 var contenido = document.querySelector('#contenido');
 
-url = 'https://swapi.co/api/planets/';
+url3 = 'https://swapi.co/api/planets/';
 
 datos = {};
 
 function traerPlanets() {
 
-    $.getJSON(url,datos, function(response){       
+    $.getJSON(url3,datos, function(response){       
        
             contenido.innerHTML = `
 
@@ -116,11 +116,11 @@ function traerPlanets() {
 
 }
 
-url = 'https://swapi.co/api/films/';
+url4 = 'https://swapi.co/api/films/';
 
 function traerFilms() {
 datos = {};
-$.getJSON(url, datos, function(response){
+$.getJSON(url4, datos, function(response){
     console.log(response.results);
     contenido.innerHTML = `
     <h1>Nombre: ${response.results[0].title}</h1>
