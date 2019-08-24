@@ -40,9 +40,11 @@ $(document).ready(function() {
 
         $('#demo').hide();
 
-        traerEspecies();
+        traerSpecies();
 
     });
+
+
     $("#startchips").click(function() {
 
         $('#demo').hide();

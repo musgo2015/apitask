@@ -122,6 +122,7 @@ function traerFilms() {
 datos = {};
 $.getJSON(url4, datos, function(response){
     console.log(response.results);
+
     contenido.innerHTML = `
     <h1>Nombre: ${response.results[0].title}</h1>
     <p>Descripcion: ${response.results[0].opening_crawl}</p>
@@ -151,4 +152,91 @@ $.getJSON(url4, datos, function(response){
 })
 }
 
+url5 = 'https://swapi.co/api/species/';
+
+function traerSpecies(){
+
+    datos = {};
+
+    $.getJSON(url5, datos, function(response){
+
+        console.log(response.results);
+        contenido.innerHTML = `
+        <h1>Nombre: ${response.results[0].name}</h1>
+        <p>classificacion: ${response.results[0].classification}</p>
+        <p>Lenguaje: ${response.results[0].language}</p>
+        <p>Color de Piel: ${response.results[0].skin_colors}</p>
+        <p>Planeta: ${response.results[0].homeworld}</p>              
+        
+        <h1>Nombre: ${response.results[1].name}</h1>
+        <p>classificacion: ${response.results[1].classification}</p>
+        <p>Lenguaje: ${response.results[1].language}</p>
+        <p>Color de Piel: ${response.results[1].skin_colors}</p>
+        <p>Planeta: ${response.results[1].homeworld}</p> 
+
+        <h1>Nombre: ${response.results[2].name}</h1>
+        <p>classificacion: ${response.results[2].classification}</p>
+        <p>Lenguaje: ${response.results[2].language}</p>
+        <p>Color de Piel: ${response.results[2].skin_colors}</p>
+        <p>Planeta: ${response.results[2].homeworld}</p> 
+
+        <h1>Nombre: ${response.results[3].name}</h1>
+        <p>classificacion: ${response.results[3].classification}</p>
+        <p>Lenguaje: ${response.results[3].language}</p>
+        <p>Color de Piel: ${response.results[3].skin_colors}</p>
+        <p>Planeta: ${response.results[3].homeworld}</p> 
+
+        <h1>Nombre: ${response.results[4].name}</h1>
+        <p>classificacion: ${response.results[4].classification}</p>
+        <p>Lenguaje: ${response.results[4].language}</p>
+        <p>Color de Piel: ${response.results[4].skin_colors}</p>
+        <p>Planeta: ${response.results[4].homeworld}</p>         
+               
+        `
+
+    })
+
+
+}
+
+url6 = 'https://swapi.co/api/starships/';
+
+function traerNaves(){
+
+    datos = {};
+
+    $.getJSON(url6, datos, function(response){
+
+        console.log(response.results);
+        contenido.innerHTML = `
+        <h1>Nombre: ${response.results[0].name}</h1>
+            <p>Capacidad: ${response.results[0].passenger}</p>
+            <p>Modelo: ${response.results[0].model}</p>
+            <p>Clase de Nave: ${response.results[0].starship_class}</p>
+            <p>Precio: ${response.results[0].cost_in_credits}</p>  
+
+            <h1>Nombre: ${response.results[1].name}</h1>
+            <p>Capacidad: ${response.results[1].passenger}</p>
+            <p>Modelo: ${response.results[1].model}</p>
+            <p>Clase de Nave: ${response.results[1].starship_class}</p>
+            <p>Precio: ${response.results[1].cost_in_credits}</p> 
+
+            <h1>Nombre: ${response.results[2].name}</h1>
+            <p>Capacidad: ${response.results[2].passenger}</p>
+            <p>Modelo: ${response.results[2].model}</p>
+            <p>Clase de Nave: ${response.results[2].starship_class}</p>
+            <p>Precio: ${response.results[2].cost_in_credits}</p> 
+
+            <h1>Nombre: ${response.results[3].name}</h1>
+            <p>Capacidad: ${response.results[3].passenger}</p>
+            <p>Modelo: ${response.results[3].model}</p>
+            <p>Clase de Nave: ${response.results[3].starship_class}</p>
+            <p>Precio: ${response.results[3].cost_in_credits}</p> 
+               
+        `
+
+    })
+
+
+}
 
